@@ -11,6 +11,11 @@
 		DD614FF52B3B0564006913FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD614FF42B3B0564006913FD /* ContentView.swift */; };
 		DD614FF72B3B0565006913FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD614FF62B3B0565006913FD /* Assets.xcassets */; };
 		DD614FFA2B3B0565006913FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD614FF92B3B0565006913FD /* Preview Assets.xcassets */; };
+		DD6150022B3B05AB006913FD /* PickItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6150012B3B05AB006913FD /* PickItem.swift */; };
+		DD6150052B3B05EC006913FD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6150042B3B05EC006913FD /* Home.swift */; };
+		DD6150072B3B11D3006913FD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6150062B3B11D3006913FD /* Post.swift */; };
+		DD61500A2B3B17AE006913FD /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6150092B3B17AE006913FD /* OffsetKey.swift */; };
+		DD61500C2B3B1FA2006913FD /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD61500B2B3B1FA2006913FD /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		DD614FF42B3B0564006913FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DD614FF62B3B0565006913FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD614FF92B3B0565006913FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD6150012B3B05AB006913FD /* PickItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickItem.swift; sourceTree = "<group>"; };
+		DD6150042B3B05EC006913FD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		DD6150062B3B11D3006913FD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DD6150092B3B17AE006913FD /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
+		DD61500B2B3B1FA2006913FD /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,9 @@
 		DD614FF12B3B0564006913FD /* ImageViewer */ = {
 			isa = PBXGroup;
 			children = (
+				DD6150082B3B179C006913FD /* Helpers */,
+				DD6150032B3B05DD006913FD /* Views */,
+				DD6150002B3B059E006913FD /* Models */,
 				DD614FF22B3B0564006913FD /* ImageViewerApp.swift */,
 				DD614FF42B3B0564006913FD /* ContentView.swift */,
 				DD614FF62B3B0565006913FD /* Assets.xcassets */,
@@ -65,6 +78,32 @@
 				DD614FF92B3B0565006913FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD6150002B3B059E006913FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD6150012B3B05AB006913FD /* PickItem.swift */,
+				DD6150062B3B11D3006913FD /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD6150032B3B05DD006913FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD6150042B3B05EC006913FD /* Home.swift */,
+				DD61500B2B3B1FA2006913FD /* DetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD6150082B3B179C006913FD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DD6150092B3B17AE006913FD /* OffsetKey.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD61500A2B3B17AE006913FD /* OffsetKey.swift in Sources */,
+				DD61500C2B3B1FA2006913FD /* DetailsView.swift in Sources */,
 				DD614FF52B3B0564006913FD /* ContentView.swift in Sources */,
+				DD6150022B3B05AB006913FD /* PickItem.swift in Sources */,
+				DD6150052B3B05EC006913FD /* Home.swift in Sources */,
 				DD614FF32B3B0564006913FD /* ImageViewerApp.swift in Sources */,
+				DD6150072B3B11D3006913FD /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
